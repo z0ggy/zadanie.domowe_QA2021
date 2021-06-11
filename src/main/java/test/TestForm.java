@@ -48,10 +48,6 @@ public class TestForm {
         formPage.clickCalendar();
         formPage.clickNext();
 
-        //agreementPage.clickAgreement1();
-
-
-
     }
 
     @After
