@@ -18,7 +18,7 @@ public class SetupBrowser {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        //driver.get("https://prod-kurs.coderslab.pl/index.php?controller=authentication");
+
     }
 
     public static WebDriver getDriver() {

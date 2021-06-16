@@ -4,6 +4,7 @@ import configuration.SetupBrowser;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
 
+import org.openqa.selenium.JavascriptExecutor;
 import pages.AgreementPage;
 import pages.FormPage;
 import org.junit.Before;
@@ -47,6 +48,16 @@ public class TestForm {
 
         formPage.clickCalendar();
         formPage.clickNext();
+
+        //Click on checkboxes on agreement page
+        agreementPage.checkAgree_1();
+        agreementPage.checkAgree_2();
+        agreementPage.checkAgree_3();
+
+        //Scrolling page down
+        ((JavascriptExecutor) SetupBrowser.getDriver()).executeScript("scroll(0,400)");
+
+        agreementPage.clickNextButton();
 
     }
 
